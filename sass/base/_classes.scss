@@ -1,0 +1,79 @@
+// Centers Text
+.text-center { text-align: center; }
+.text-shadow { text-shadow: 0px 5px 10px #000; }
+
+// White Text
+.white-text { color: $color-white !important; }
+.grey-text { color: $color-grey-light !important; }
+.primary-text { color: $primary-color !important; }
+
+.hr-row {
+    &::after {
+        display: block;
+        margin: 0 auto;
+        height: 2px;
+        background-color: #232323;
+        content: " ";
+        width: 100%;
+    }
+}
+
+// Margins
+.margin-header { margin-bottom: 6rem; }
+.margin-top-small { margin-top: 2rem; }
+.margin-top-medium { margin-top: 4rem; }
+.margin-top-big { margin-top: 6rem; }
+.margin-bottom-small { margin-bottom: 2rem; }
+.margin-bottom-medium { margin-bottom: 4rem; }
+.margin-bottom-big { margin-bottom: 6rem; }
+
+.remove-nav {
+    right: 90rem;
+    transition: all .5s;
+}
+
+// Animations
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    opacity: 1 !important;
+}
+
+.fadeUp {
+    animation-name: fadeUp;
+    animation-duration: .5s;
+    opacity: 1 !important;
+}
+
+
+.fadeLeft-social-1 {
+    animation-name: fadeLeft;
+    animation-duration: .2s;
+    opacity: 1 !important;
+}
+.fadeLeft-social-2 {
+    animation-name: fadeLeft;
+    animation-duration: .4s;
+    opacity: 1 !important;
+}
+.fadeLeft-social-3 {
+    animation-name: fadeLeft;
+    animation-duration: .6s;
+    opacity: 1 !important;
+}
+
+.loading::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 50%;
+    border-top: 2.5px solid #F7EB94;
+    border-right: 2.5px solid transparent;
+    animation: loadingSpinner 0.7s linear infinite;
+}
